@@ -34,8 +34,9 @@ if (empty($_SESSION['keranjang'])) {
         echo "<p>" . $p['nama'] . " x " . $item['jumlah'] . " = Rp" . number_format($subtotal) . "</p>";
     }
     echo "<h3>Total: Rp" . number_format($total) . "</h3>";
+    echo "<a href='checkout.php'>Lanjut ke Checkout</a>";
 }
 ?>
 
-<br>
+<br><br>
 <a href="produk.php">← Kembali Belanja</a>
